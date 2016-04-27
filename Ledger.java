@@ -47,4 +47,12 @@ public class Ledger {
         }
         return count;
     }
+    public static boolean isStrictlyIncreasing() {
+        for (int i = 0; i < salesMade-1; i++) {
+            if (sale[i] >= sale[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
