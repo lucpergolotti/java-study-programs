@@ -5,9 +5,8 @@ import java.util.Scanner;
 /*
 * Name: Luc Pergolotti
 * tuf48949@temple.edu
-* Date: 
-* <assignment>
-* Purpose: 
+* Date: 4/27/16
+* Purpose: Get frequency of each number showing up in a phone number.
 */
 public class CharacterFrequency {
     public static String number;
