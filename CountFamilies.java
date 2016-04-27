@@ -4,9 +4,8 @@ import java.util.Scanner;
 /*
 * Name: Luc Pergolotti
 * tuf48949@temple.edu
-* Date: 
-* <assignment>
-* Purpose: 
+* Date: 4/27/16
+* Purpose: Get the bottom ten percent of incomes entered by user.
 */
 public class CountFamilies {
     public static double[] incomes;
