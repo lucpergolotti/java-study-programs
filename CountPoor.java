@@ -4,9 +4,8 @@ import java.util.Scanner;
 /*
 * Name: Luc Pergolotti
 * tuf48949@temple.edu
-* Date: 
-* <assignment>
-* Purpose: 
+* Date: 4/27/16
+* Purpose: Determine if family is poor based on income, size, housing cost, and food cost.
 */
 public class CountPoor {
     private static int k;
