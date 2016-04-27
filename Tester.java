@@ -22,15 +22,16 @@ public class Tester {
             System.out.println("2. Get number of sales made");
             System.out.println("3. Get total income from all sales.");
             System.out.println("4. Get average of all sales.");
-            System.out.println("5. Get number of sales valued higher than specified number");
-            System.out.println("6. Exit");
+            System.out.println("5. Get number of sales valued higher than"
+                    + " specified number");
+            System.out.println("6. Check if the values are strictly increasing.");
+            System.out.println("7. Exit");
             int option = keyboard.nextInt();
             switch (option){
                 case 1:
                     System.out.print("Enter the amount paid: ");
                     double d = keyboard.nextDouble();
                     ledgerObject.addSale(d);
-                    System.out.println("Sale Added!");
                     break;
                 case 2:
                     System.out.println("Total number of sales: "
@@ -50,6 +51,12 @@ public class Tester {
                     System.out.println("There are " + ledgerObject.getCountAbove(value)
                             + " sales above this value.");
                 case 6:
+                    if(ledgerObject.isStrictlyIncreasing())
+                        System.out.println("The only increase.");
+                    else
+                        System.out.println("The values are not strictly increasing.");
+                    break;
+                case 7:
                     isExited = true;
                     break;
             }
